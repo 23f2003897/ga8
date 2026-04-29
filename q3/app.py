@@ -11,10 +11,12 @@ model = DecisionTreeClassifier(random_state=42)
 model.fit(iris.data, iris.target)
 class_names = ["setosa", "versicolor", "virginica"]
 
+
 # Endpoint 1: Checking if the restaurant is open
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+
 
 # Endpoint 2: Placing an order (asking for a prediction)
 @app.get("/predict")

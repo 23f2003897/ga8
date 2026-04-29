@@ -1,4 +1,5 @@
 from google import genai
+
 client = genai.Client(api_key="AIzaSyDYTpG4klIwlcGocy0ljEl3Dtibp4PIIV8")
 
 print("Checking available models...")
